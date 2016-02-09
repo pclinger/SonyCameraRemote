@@ -62,7 +62,7 @@ Install the latest version of the Sony "Smart Remote Control" app on your camera
 
 # Getting Started
 
-Open the Smart Remote Control application on your camera, after which your camera will create a wifi network.  Connect your computer to the camera's wifi network, after which you can use this library to issue commands to the camera.
+Open the Smart Remote Control application on your camera.  Your  camera will then create a wifi network.  Connect your computer to the camera's wifi network, after which you can use this library to issue commands to the camera.
 
 # Functions
 
