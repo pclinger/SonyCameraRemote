@@ -42,7 +42,7 @@ my $request = $camera->request('getAvailableIsoSpeedRate');
 if(!$request->success) {
   die $request->errorMessage;
 }
-printf "Supported ISO: %s\n", join(', ',@{$request->result->[1]});
+printf "Available ISO: %s\n", join(', ',@{$request->result->[1]});
 ```
 
 # Requirements
