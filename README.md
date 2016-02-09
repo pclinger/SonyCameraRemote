@@ -10,6 +10,9 @@ use SonyCameraRemote;
 my $camera = new SonyCameraRemote;
 
 # Take a picture
+$camera->takePicture;
+
+# Change some camera settings, then take a picture
 $camera->takePicture({
   iso          => 3200,
   fNumber      => 2.8,
