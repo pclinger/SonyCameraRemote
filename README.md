@@ -1,7 +1,7 @@
 # SonyCameraRemote
 Sony Camera Remote API - Perl Implementation
 
-Connect and control Sony cameras using the Sony Camera Remote API.  Includes numerous helper functions to make interacting with the API easier.
+Connect and control Sony cameras using the [Sony Camera Remote API](https://developer.sony.com/downloads/camera-file/sony-camera-remote-api-beta-sdk/).  Includes numerous helper functions to make interacting with the API easier.
 
 # Synopsis
 
@@ -36,6 +36,13 @@ my $event = $camera->getEvent('focusMode');
 
 # Grab a value from a specific event from getEvent
 my $event = $camera->getEvent('focusMode','currentFocusMode');
+
+# Send an API call to the camera instead of using helper functions
+my $request = $camera->request('getAvailableIsoSpeedRate');
+if(!$request->success) {
+  die $request->errorMessage;
+}
+printf "Supported ISO: %s\n", join(', ',@{$request->result->[1]});
 ```
 
 # Requirements
