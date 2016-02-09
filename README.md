@@ -40,17 +40,23 @@ my $event = $camera->getEvent('focusMode','currentFocusMode');
 
 # Requirements
 
-__LWP::UserAgent__
+__Perl Modules__
 
-For connecting to the camera and sending requests
+LWP::UserAgent
+
+Time::HiRes
 
 __Smart Remote Control__
 
-Install the latest version of the Sony "Smart Remote Control" app on your camera.  Open the application on your camera, after which your camera will create a wifi network.  Connect your computer to that wifi network, after which you can use this library to issue commands to the camera.
+Install the latest version of the Sony "Smart Remote Control" app on your camera.  You might need to update your camera's firmware first.
+
+# Getting Started
+
+Open the Smart Remote Control application on your camera, after which your camera will create a wifi network.  Connect your computer to the camera's wifi network, after which you can use this library to issue commands to the camera.
 
 # Functions
 
-The functions are fairly well documented in SonyCameraRemote.pm and SonyCameraRemote/Request.pm
+The functions are fairly well documented in SonyCameraRemote.pm and SonyCameraRemote/Request.pm, and there are some examples in the "examples" folder.
 
 # License
 
